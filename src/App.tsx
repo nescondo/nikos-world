@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import {
   NavigationMenu,
@@ -24,13 +21,13 @@ function App() {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-              <Link href="/docs">Home</Link>
+              <Link href="/">Home</Link>
             </NavigationMenuLink>
             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-              <Link href="/docs">About Me</Link>
+              <Link href="/about-me">About Me</Link>
             </NavigationMenuLink>
             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-              <Link href="/docs">Contact</Link>
+              <Link href="/projects">Projects</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           </NavigationMenuList>
