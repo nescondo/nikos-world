@@ -5,23 +5,23 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { Link } from '@radix-ui/react-navigation-menu'
 
 function TopNavBar() {
     return (
         <>
-            <div className="flex justify-center">
-                <NavigationMenu>
+            <div className="grid grid-cols-5 p-8">
+                <h2 className="col-start-1 m-auto text-2xl">NE</h2>
+                <NavigationMenu className="col-start-3 m-auto">
                     <NavigationMenuList>
                         <NavigationMenuItem>
                             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                <Link href="/">Home</Link>
+                                <a href="#" className="text-xl">Home</a>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                <Link href="/about-me">About Me</Link>
+                                <a href="#about-me" className="text-xl">About Me</a>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                <Link href="/projects">Projects</Link>
+                                <a href="#projects" className="text-xl">Projects</a>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                     </NavigationMenuList>
