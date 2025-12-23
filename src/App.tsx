@@ -1,9 +1,7 @@
-import { Link } from 'react-router'
 import { Card } from './components/ui/card'
 import TopNavBar from './components/ui/top-navbar'
 import AboutMe from './pages/about-me/about-me.tsx'
 import Projects from './pages/projects/projects.tsx'
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from './components/ui/navigation-menu.tsx'
 
 function App() {
 
