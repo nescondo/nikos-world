@@ -2,8 +2,6 @@ import { Card } from './components/ui/card'
 import TopNavBar from './components/ui/top-navbar'
 import AboutMe from './pages/about-me/about-me'
 import Projects from './pages/projects/projects'
-import Terminal, { ColorMode, TerminalOutput } from 'react-terminal-ui'
-import React, { useState } from 'react';
 
   
 function App() {
