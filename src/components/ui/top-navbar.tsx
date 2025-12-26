@@ -13,19 +13,19 @@ function TopNavBar() {
         <>
             <div className="grid grid-cols-3 p-8">
                 <div className="col-start-1 m-auto text-2xl">
-                    <h2 className="">&lt; Nikolai Escondo /&gt; <a className="animate-cursor">|</a></h2>
+                    <h2 className="">&lt;Nikolai Escondo/&gt;<a className="animate-cursor">|</a></h2>
                 </div>
                 <NavigationMenu className="col-start-2 m-auto">
                     <NavigationMenuList>
                         <NavigationMenuItem>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                <a href="#" className="text-lg">&lt; Home /&gt;</a>
+                                <a href="#" className="text-lg">&lt;Home/&gt;</a>
                             </NavigationMenuLink>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                <a href="#about-me" className="text-lg">&lt; About Me /&gt;</a>
+                                <a href="#about-me" className="text-lg">&lt;About Me/&gt;</a>
                             </NavigationMenuLink>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                <a href="#projects" className="text-lg">&lt; Projects /&gt;</a>
+                                <a href="#projects" className="text-lg">&lt;Projects/&gt;</a>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                     </NavigationMenuList>

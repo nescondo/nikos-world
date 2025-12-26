@@ -1,15 +1,18 @@
 import { Card } from './components/ui/card'
 import TopNavBar from './components/ui/top-navbar'
-import AboutMe from './pages/about-me/about-me.tsx'
-import Projects from './pages/projects/projects.tsx'
+import AboutMe from './pages/about-me/about-me'
+import Projects from './pages/projects/projects'
+import Terminal, { ColorMode, TerminalOutput } from 'react-terminal-ui'
+import React, { useState } from 'react';
 
+  
 function App() {
-
   return (
     <>
       <div className="sticky top-0">
         <TopNavBar />
       </div>
+
       <div className="flex m-20">
         <Card className="m-auto">
           <div className="justify-items-center">
