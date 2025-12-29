@@ -1,5 +1,5 @@
-import AboutMeBio from "@/components/ui/about-me-bio"
-import AboutMeCards from "@/components/ui/about-me-cards"
+import AboutMeBio from "@/components/ui/about-me/about-me-bio"
+import AboutMeCards from "@/components/ui/about-me/about-me-cards"
 
 function AboutMe() {
 

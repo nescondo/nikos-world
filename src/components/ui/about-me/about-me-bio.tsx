@@ -6,7 +6,7 @@ function AboutMeBio() {
         <>  
             <div className="flex-col">
                 <div className="flex border-1 border-b-0 border-white/20 rounded-t-lg bg-[#1f2938]">
-                    <div className="flex border-1 border-b-0 border-white/20 rounded-tl-lg">
+                    <div className="flex border-1 border-t-0 border-b-0 border-l-0 border-white/20 rounded-tl-lg">
                         <div className="flex w-full h-full pt-3 pb-3 pl-3 pr-5 rounded-tl-lg border-b-2 border-b-terminal-blue border-r-1 border-r-white/20 bg-current/2">
                             <div className="flex pl-3 gap-2">
                                 <FaReact className="self-center text-lg" color="#00D9FF"/>
