@@ -44,8 +44,8 @@ function AboutMeBio() {
 
                     <hr className="m-auto w-11/12 opacity-25"></hr>
 
-                    <div className="flex w-5xl p-7 pl-10 pr-10">
-                        <p>A developer who's excited, hungry, and ready to learn as much as possible. I love coding and can lose myself for hours developing
+                    <div className="flex w-5xl p-7 text-balance">
+                        <p className="text-center">A developer who's excited, hungry, and ready to learn as much as possible. I love coding and can lose myself for hours developing
                             software. I'm always eager to learn and overall, enjoy the process of getting better at things I'm passionate about. Outside of 
                             programming, I like to play video games and workout.
                         </p>

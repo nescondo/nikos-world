@@ -6,7 +6,7 @@ import Terminal from './components/ui/terminal/terminal'
 function App() {
   return (
     <>
-      <div className="sticky top-0">
+      <div className="sticky top-0 z-1">
         <TopNavBar />
       </div>
 

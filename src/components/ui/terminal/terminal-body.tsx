@@ -34,7 +34,9 @@ function TerminalBody() {
                     </div>
 
                     <div className="flex mt-10 gap-5">
-                        <Button variant="secondary" className="bg-terminal-green hover:bg-terminal-green/70">View My Work</Button>
+                        <Button asChild variant="secondary" className="bg-terminal-green hover:bg-terminal-green/70">
+                            <a href="#projects">View My Work</a>
+                        </Button>
                         <Button variant="outline" className="text-terminal-blue border-terminal-blue bg-[#161d28] hover:bg-terminal-blue/70">Contact Me</Button>
                     </div>
 
