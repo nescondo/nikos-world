@@ -27,7 +27,7 @@ function AboutMeCards() {
 
                 <div className="w-100 h-60 place-items-center p-15 pl-30 pr-30 rounded-lg bg-[#1f2938] border-1 border-terminal-blue/10 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-terminal-blue">
                     <ImConfused2 className="text-terminal-blue text-3xl"/>
-                    <p className="text-2xl text-terminal-blue mt-5 truncate">too many times :&#40;</p>
+                    <p className="text-2xl text-terminal-blue mt-7.5 truncate">too many times :&#40;</p>
                     <p className="mt-1 truncate">"it works on my machine"</p>
                 </div>
             </div>
