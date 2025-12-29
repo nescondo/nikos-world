@@ -13,7 +13,7 @@ function TopNavBar() {
         <>
             <div className="grid grid-cols-3 p-8">
                 <div className="col-start-1 m-auto text-2xl">
-                    <h2 className="">&lt;Nikolai Escondo/&gt;<a className="animate-cursor">|</a></h2>
+                    <h2>&lt;<a className="text-terminal-blue">Nikolai Escondo</a>/&gt;<a className="animate-cursor text-terminal-blue">|</a></h2>
                 </div>
                 <NavigationMenu className="col-start-2 m-auto">
                     <NavigationMenuList>

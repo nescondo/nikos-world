@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -42,6 +43,9 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-terminal-green: #39FF14;
+  --color-terminal-blue: #00D9FF;
+  --font-jetbrains-mono: "JetBrains Mono", sans-serif;
 
   --animate-cursor: blink 1s step-start infinite;
   @keyframes blink {
@@ -128,7 +132,7 @@
   * {
     @apply border-border outline-ring/50;
     @apply scroll-smooth;
-    @apply font-mono;
+    @apply font-jetbrains-mono;
     @apply tracking-wide;
   }
   body {
