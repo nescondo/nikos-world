@@ -97,11 +97,6 @@ function Projects() {
                 </div>
               </div>
             </div>
-
-            {/* <div className="flex justify-start m-100">
-              <img className="rounded-lg" src="src/assets/maritzas-house/mh-1.png" alt="Maritza's House personal project"></img>
-              <p>HEAIDSBUADBSAIBDXA</p>
-            </div> */}
           </div>
         </div>
       </div>
