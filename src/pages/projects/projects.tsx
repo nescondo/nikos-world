@@ -24,7 +24,7 @@ function Projects() {
 
           <div className="flex flex-wrap w-6/7">
             <div className="flex mt-20 gap-60 ">
-              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="public/images/mh-1.png" alt="Maritza's House personal project"></img>
+              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="/images/mh1.png" alt="Maritza's House personal project"></img>
               <div>
                 <h3 className="text-3xl">Maritza's House</h3>
 
@@ -50,7 +50,7 @@ function Projects() {
             </div>
 
             <div className="flex mt-20 gap-60 ">
-              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="public/images/nw-1.png" alt="Maritza's House personal project"></img>
+              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="/images/nw1.png" alt="Niko's World personal project"></img>
               <div>
                 <h3 className="text-3xl">Niko's World</h3>
 
@@ -74,7 +74,7 @@ function Projects() {
             </div>
 
             <div className="flex mt-20 gap-60 ">
-              <img className="rounded-lg w-440 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="public/images/sorry-no-photo.png" alt="Maritza's House personal project"></img>
+              <img className="rounded-lg w-440 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="/images/sorrynophoto.png" alt="Platform Tools work project"></img>
               <div>
                 <h3 className="text-3xl">Platform Tools</h3>
 
