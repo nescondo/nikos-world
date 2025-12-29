@@ -23,7 +23,7 @@ function AboutMeBio() {
 
                     </div>
                 </div>
-                <div className="flex-col rounded-b-lg bg-[#1f2938] border-1 border-white/20">
+                <div className="flex-col rounded-b-lg bg-[#161d28] border-1 border-white/20">
                     <div className="p-7">
                         <p className="pb-1">1&nbsp;&nbsp;&nbsp;&nbsp; <a className="text-current/50">// who i am</a> </p>
                         <p className="pb-1">2&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-purple-500">const</a> <a className="text-terminal-blue">developer</a> = &#123;</a></p>
