@@ -2,8 +2,7 @@ import { Card } from './components/ui/card'
 import TopNavBar from './components/ui/top-navbar'
 import AboutMe from './pages/about-me/about-me'
 import Projects from './pages/projects/projects'
-import TerminalHeader from './components/ui/terminal/terminal-header'
-import TerminalBody from './components/ui/terminal/terminal-body'
+import Terminal from './components/ui/terminal/terminal'
   
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
       </div>
 
         <div className="flex-col max-w-250 mt-10 m-auto">
-          <TerminalHeader></TerminalHeader>
-          <TerminalBody></TerminalBody>
+          <Terminal></Terminal>
         </div>
 
       <div className="flex m-20">

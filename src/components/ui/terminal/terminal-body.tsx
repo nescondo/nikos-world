@@ -1,3 +1,4 @@
+import TerminalCursor from './terminal-cursor'
 import SkillNodes from './terminal-skill-nodes'
 import { Button } from "@/components/ui/button"
 
@@ -38,7 +39,8 @@ function TerminalBody() {
                     </div>
 
                     <div className="flex mt-10 mb-5">
-                        <p>nikos-world@MacBook-Pro <a className="text-terminal-green">%</a> <a className="animate-cursor text-terminal-blue">|</a></p>
+                        <p>nikos-world@MacBook-Pro <a className="text-terminal-green">%</a></p>
+                        <a className="ml-3"><TerminalCursor></TerminalCursor></a>
                     </div>
                 </div>
             </div>
