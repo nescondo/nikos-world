@@ -14,6 +14,8 @@ function App() {
           <Terminal></Terminal>
         </div>
 
+        <hr className="m-auto w-full opacity-25"></hr>
+
       <div id="about-me" className="scroll-smooth">
         <AboutMe></AboutMe>
       </div>

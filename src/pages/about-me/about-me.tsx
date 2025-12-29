@@ -5,7 +5,6 @@ function AboutMe() {
 
   return (
     <>
-        <hr className="m-auto w-full opacity-25"></hr>
         <div className="flex">
           <div className="p-25 pl-30 pr-30">
             <p>~/nikos-world<a className="text-terminal-blue">/about_me</a></p>

@@ -1,13 +1,110 @@
+import { CgLogIn } from 'react-icons/cg'
+import { Button } from "@/components/ui/button"
+import { BsGithub } from "react-icons/bs";
+import { FaAngular, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"
+import { RiTailwindCssFill } from "react-icons/ri"
+import { TbBrandVite, TbFileTypeSql } from "react-icons/tb"
+import { SiPostman } from "react-icons/si"
+
 function Projects() {
 
   return (
     <>
-        <div className="flex h-screen justify-center items-center">
-          <div className="flex-col justify-items-center">
-            <h1>Hi, I'm Niko!</h1>
-            <p>testing projects page</p>
+      <div className="flex">
+        <div className="p-25 pl-30 pr-30">
+          <p>~/nikos-world<a className="text-terminal-blue">/projects</a></p>
+
+          <div className="mt-5">
+            <h1 className="text-4xl bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">Projects</h1>
+          </div>
+
+          <div className="mt-2">
+            <p className="text-lg text-current/50">// Personal, work, and research projects</p>
+          </div>
+
+          <div className="flex flex-wrap w-6/7">
+            <div className="flex mt-20 gap-60 ">
+              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="src/assets/maritzas-house/mh-1.png" alt="Maritza's House personal project"></img>
+              <div>
+                <h3 className="text-3xl">Maritza's House</h3>
+
+                <Button asChild className="mt-5 hover:bg-[#1f2938] mr-5" variant="outline" size="icon-lg">
+                  <a href="https://maritzashouse.com/"><CgLogIn color="#00D9FF" /></a>
+                </Button>
+
+                <Button asChild className="hover:bg-[#1f2938]" variant="outline" size="icon-lg">
+                  <a href="https://github.com/nescondo/maritzas-house-reimagined"><BsGithub color="#00D9FF" /></a>
+                </Button>
+
+                <p className="mt-5 text-balance">A simple, easy-to-navigate website for the purpose of bringing awareness to an 
+                  Adult Foster Care home within Grand Rapids, MI. Compatible with mobile devices.
+                </p>
+
+                <div className="flex mt-5 gap-2">
+                  <FaAngular className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#c3002f" />
+                  <FaHtml5 className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#E34C26"/>
+                  <FaCss3Alt className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#663399"/>
+                </div>
+
+              </div>
+            </div>
+
+            <div className="flex mt-20 gap-60 ">
+              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="src/assets/nikos-world/nw-1.png" alt="Maritza's House personal project"></img>
+              <div>
+                <h3 className="text-3xl">Niko's World</h3>
+
+                <Button asChild className="mt-5 hover:bg-[#1f2938] mr-5" variant="outline" size="icon-lg">
+                  <a href="https://nikos-world.vercel.app/"><CgLogIn color="#00D9FF" /></a>
+                </Button>
+
+                <Button asChild className="hover:bg-[#1f2938]" variant="outline" size="icon-lg">
+                  <a href="https://github.com/nescondo/nikos-world"><BsGithub color="#00D9FF" /></a>
+                </Button>
+
+                <p className="mt-5 text-balance">The source of this website. A place to showcase what I've built and learned!
+                </p>
+
+                <div className="flex mt-5 gap-2">
+                  <FaReact className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#00D9FF"/>
+                  <RiTailwindCssFill className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#3b82f6"/>
+                  <TbBrandVite className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#bd34fe"/>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex mt-20 gap-60 ">
+              <img className="rounded-lg w-440 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="src/assets/sorry-no-photo.png" alt="Maritza's House personal project"></img>
+              <div>
+                <h3 className="text-3xl">Platform Tools</h3>
+
+                <Button disabled className="mt-5 hover:bg-[#1f2938] mr-5" variant="outline" size="icon-lg">
+                  <a><CgLogIn color="#00D9FF" /></a>
+                </Button>
+
+                <Button disabled className="hover:bg-[#1f2938]" variant="outline" size="icon-lg">
+                  <a><BsGithub color="#00D9FF" /></a>
+                </Button>
+
+                <p className="mt-5 text-balance">An in-house web application to assist Project Owners, Project Managers, and
+                  Business Analysts to configure consumer-facing web-interfaces without needing technical knowledge to modify the back-end.
+                </p>
+
+                <div className="flex mt-5 gap-2">
+                  <FaAngular className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#c3002f" />
+                  <TbFileTypeSql className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#F29111"/>
+                  <SiPostman className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#EF5B25"/>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="flex justify-start m-100">
+              <img className="rounded-lg" src="src/assets/maritzas-house/mh-1.png" alt="Maritza's House personal project"></img>
+              <p>HEAIDSBUADBSAIBDXA</p>
+            </div> */}
           </div>
         </div>
+      </div>
     </>
   )
 }
