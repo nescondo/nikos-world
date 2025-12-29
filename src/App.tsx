@@ -1,4 +1,3 @@
-import { Card } from './components/ui/card'
 import TopNavBar from './components/ui/top-navbar'
 import AboutMe from './pages/about-me/about-me'
 import Projects from './pages/projects/projects'
@@ -11,18 +10,10 @@ function App() {
         <TopNavBar />
       </div>
 
-        <div className="flex-col max-w-250 mt-10 m-auto">
+        <div className="flex-col max-w-250 mt-10 mb-20 m-auto">
           <Terminal></Terminal>
         </div>
 
-      <div className="flex m-20">
-        <Card className="m-auto">
-          <div className="justify-items-center">
-            <h1>Hi, I'm Niko!</h1>
-            <p>I love playing video games, working out, and coding.</p>
-          </div>
-        </Card>
-      </div>
       <div id="about-me" className="scroll-smooth">
         <AboutMe></AboutMe>
       </div>
