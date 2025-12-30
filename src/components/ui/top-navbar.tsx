@@ -17,7 +17,7 @@ function TopNavBar() {
 
                 <div className="flex flex-1 justify-center">
                     <NavigationMenu>
-                        <NavigationMenuList className="flex items-center gap-6">
+                        <NavigationMenuList className="flex items-center gap-8">
                             <NavigationMenuItem>
                                 <NavigationMenuLink className="hover:bg-[#1f2938] hover:text-foreground">
                                     <Link href="#" className="text-lg">&lt;<a className="text-terminal-green">Home</a>/&gt;</Link>
@@ -37,19 +37,19 @@ function TopNavBar() {
                     </NavigationMenu>
                 </div>
 
-                <div className="flex flex-1 justify-center scale-200">
-                    <NavigationMenu className="">
-                        <NavigationMenuLink className="hover:bg-[#1f2938]">
+                <div className="flex flex-1 justify-center">
+                    <NavigationMenu className="gap-8">
+                        <NavigationMenuLink className="hover:bg-[#1f2938] scale-200">
                             <Link href="https://github.com/nescondo">
                                 <BsGithub color="#00D9FF"/>
                             </Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink className="hover:bg-[#1f2938]">
+                        <NavigationMenuLink className="hover:bg-[#1f2938] scale-200">
                             <Link href="https://www.linkedin.com/in/nikolai-escondo/">
                                 <BsLinkedin color="#00D9FF" />
                             </Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink className="hover:bg-[#1f2938]">
+                        <NavigationMenuLink className="hover:bg-[#1f2938] scale-200">
                             <Link href="https://www.youtube.com/@niko.dev.playground">
                                 <BsYoutube color="#00D9FF" />
                             </Link>
