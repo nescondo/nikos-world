@@ -27,6 +27,8 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Controller, useForm } from "react-hook-form"
 import * as z from "zod"
+import { collection, addDoc } from "firebase/firestore"; 
+import { db } from "../../firebase"
 
 const ContactFormSchema = z.object({
     name: z
@@ -49,8 +51,22 @@ function ContactForm() {
         },
     })
 
-    function onSubmit(data: z.infer<typeof ContactFormSchema>) {
-        console.log(data)
+    async function onSubmit(data: z.infer<typeof ContactFormSchema>) {
+        console.log(db);
+        console.log(data.name);
+        console.log(data.email);
+        console.log(data.message);
+
+        try {
+            const docRef = await addDoc(collection(db, "messages"), {
+                name: data.name,
+                email: data.email,
+                message: data.message
+            });
+            console.log("Document written with ID: ", docRef.id);
+        } catch (e) {
+            console.error("Error adding document: ", e);
+        }
     }
 
     return (

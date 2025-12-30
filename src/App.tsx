@@ -2,7 +2,6 @@ import TopNavBar from './components/ui/top-navbar'
 import AboutMe from './pages/about-me/about-me'
 import Projects from './pages/projects/projects'
 import Home from './pages/home/home'
-// import { db } from './firebase'
 import ContactForm from './components/ui/contact-form'
   
 function App() {
