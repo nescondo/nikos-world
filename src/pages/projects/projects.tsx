@@ -22,9 +22,11 @@ function Projects() {
             <p className="text-lg text-current/50">// Personal, work, and research projects</p>
           </div>
 
-          <div className="flex flex-wrap w-6/7">
+          <div className="flex flex-wrap">
             <div className="flex mt-20 gap-60 ">
-              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="/images/mh1.png" alt="Maritza's House personal project"></img>
+              <div className="flex-none w-150 h-80 rounded-lg border border-white/20 transition-transform duration-300 ease-in-out hover:scale-105 hover:ring hover:ring-white">
+                <img className="w-full h-full object-fit rounded-lg" src="/images/mh1.png" alt="Maritza's House personal project" />
+              </div>
               <div>
                 <h3 className="text-3xl">Maritza's House</h3>
 
@@ -50,7 +52,9 @@ function Projects() {
             </div>
 
             <div className="flex mt-20 gap-60 ">
-              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="/images/nw1.png" alt="Niko's World personal project"></img>
+              <div className="flex-none w-150 h-80 rounded-lg border border-white/20 transition-transform duration-300 ease-in-out hover:scale-105 hover:ring hover:ring-white">
+                <img className="w-full h-full object-fit rounded-lg" src="/images/nw1.png" alt="Niko's World personal project" />
+              </div>
               <div>
                 <h3 className="text-3xl">Niko's World</h3>
 
@@ -74,7 +78,9 @@ function Projects() {
             </div>
 
             <div className="flex mt-20 gap-60 ">
-              <img className="rounded-lg w-150 h-80 border-1 border-white/20 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-white" src="/images/sorrynophoto.png" alt="Platform Tools work project"></img>
+              <div className="flex-none w-150 h-80 rounded-lg border border-white/20 transition-transform duration-300 ease-in-out hover:scale-105 hover:ring hover:ring-white">
+                <img className="w-full h-full object-fit rounded-lg" src="/images/sorrynophoto.png" alt="Platform Tools work project" />
+              </div>
               <div>
                 <h3 className="text-3xl">Platform Tools</h3>
 
