@@ -22,7 +22,7 @@ function Projects() {
             <p className="text-lg text-current/50">// Personal, work, and research projects</p>
           </div>
 
-          <div className="flex flex-wrap">
+          <div className="flex-col">
             <div className="flex mt-20 gap-60 ">
               <div className="flex-none w-150 h-80 rounded-lg border border-white/20 transition-transform duration-300 ease-in-out hover:scale-105 hover:ring hover:ring-white">
                 <img className="w-full h-full object-fit rounded-lg" src="/images/mh1.png" alt="Maritza's House personal project" />
@@ -38,9 +38,11 @@ function Projects() {
                   <a href="https://github.com/nescondo/maritzas-house-reimagined"><BsGithub color="#00D9FF" /></a>
                 </Button>
 
-                <p className="mt-5 text-balance">A simple, easy-to-navigate website for the purpose of bringing awareness to an 
-                  Adult Foster Care home within Grand Rapids, MI. Compatible with mobile devices.
-                </p>
+                <div className="flex w-4/5">
+                  <p className="mt-5 text-balance">A simple, easy-to-navigate website for the purpose of bringing awareness to an 
+                    Adult Foster Care home within Grand Rapids, MI. Compatible with mobile devices.
+                  </p>
+                </div>
 
                 <div className="flex mt-5 gap-2">
                   <FaAngular className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#c3002f" />
@@ -66,8 +68,11 @@ function Projects() {
                   <a href="https://github.com/nescondo/nikos-world"><BsGithub color="#00D9FF" /></a>
                 </Button>
 
-                <p className="mt-5 text-balance">The source of this website. A place to showcase what I've built and learned!
-                </p>
+                <div className="flex w-4/5">
+                  <p className="mt-5 text-balance">The source of this website. A place to showcase what I've built and learned!
+                    Still a work in progress — hoping to flesh it out for mobile devices as well.
+                  </p>
+                </div>
 
                 <div className="flex mt-5 gap-2">
                   <FaReact className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#00D9FF"/>
@@ -92,9 +97,12 @@ function Projects() {
                   <a><BsGithub color="#00D9FF" /></a>
                 </Button>
 
-                <p className="mt-5 text-balance">An in-house web application to assist Project Owners, Project Managers, and
-                  Business Analysts to configure consumer-facing web-interfaces without needing technical knowledge to modify the back-end.
-                </p>
+                <div className="w-4/5">
+                  <p className="mt-5 text-balance">An in-house web application to assist project owners, project managers, and
+                    business analysts to configure consumer-facing web-interfaces without needing technical knowledge to modify the back-end.
+                    Note that this is a work-related project with a private repository and is not accessible to the public :&#40;
+                  </p>
+                </div>
 
                 <div className="flex mt-5 gap-2">
                   <FaAngular className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#c3002f" />
