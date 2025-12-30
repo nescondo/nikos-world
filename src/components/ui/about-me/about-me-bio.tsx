@@ -25,21 +25,21 @@ function AboutMeBio() {
                 </div>
                 <div className="flex-col rounded-b-lg bg-[#161d28] border-1 border-white/20">
                     <div className="p-7">
-                        <p className="pb-1">1&nbsp;&nbsp;&nbsp;&nbsp; <a className="text-current/50">// who i am</a> </p>
-                        <p className="pb-1">2&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-purple-500">const</a> <a className="text-terminal-blue">developer</a> = &#123;</a></p>
-                        <p className="pb-1">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-orange-400">name</a>: <a className="text-terminal-green">"Nikolai Escondo"</a>,</a> </p>
-                        <p className="pb-1">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-orange-400">location</a>: <a className="text-terminal-green">"Grand Rapids, MI"</a>,</a> </p>
-                        <p className="pb-1">5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-orange-400">role</a>: &#91;</a> </p>
-                        <p className="pb-1">6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-terminal-green">"Student"</a>,</a> </p>
-                        <p className="pb-1">7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-terminal-green">"Intern"</a></a> </p>
-                        <p className="pb-1">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>&#93;,</a> </p>
-                        <p className="pb-1">9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-orange-400">passion</a>: <a className="text-terminal-green">"Building fun and creative software"</a>,</a> </p>
-                        <p className="pb-1">10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><a className="text-orange-400">domains</a>: &#91;</a> </p>
-                        <p className="pb-1">11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-terminal-green">"Web Development"</a>,</a> </p>
-                        <p className="pb-1">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-terminal-green">"Mobile Development"</a>,</a> </p>
-                        <p className="pb-1">13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a><a className="text-terminal-green">"Game Development"</a></a> </p>
-                        <p className="pb-1">14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>&#93;</a> </p>
-                        <p className="pb-1">15&nbsp;&nbsp;&nbsp;&nbsp;<a>&#125;;</a> </p>
+                        <p className="pb-1">1&nbsp;&nbsp;&nbsp;&nbsp; <span className="text-current/50">// who i am</span> </p>
+                        <p className="pb-1">2&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-purple-500">const</span> <span className="text-terminal-blue">developer</span> = &#123;</span></p>
+                        <p className="pb-1">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">name</span>: <span className="text-terminal-green">"Nikolai Escondo"</span>,</span> </p>
+                        <p className="pb-1">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">location</span>: <span className="text-terminal-green">"Grand Rapids, MI"</span>,</span> </p>
+                        <p className="pb-1">5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">role</span>: &#91;</span> </p>
+                        <p className="pb-1">6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-terminal-green">"Student"</span>,</span> </p>
+                        <p className="pb-1">7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-terminal-green">"Intern"</span></span> </p>
+                        <p className="pb-1">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#93;,</span> </p>
+                        <p className="pb-1">9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">passion</span>: <span className="text-terminal-green">"Building fun and creative software"</span>,</span> </p>
+                        <p className="pb-1">10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">domains</span>: &#91;</span> </p>
+                        <p className="pb-1">11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-terminal-green">"Web Development"</span>,</span> </p>
+                        <p className="pb-1">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-terminal-green">"Mobile Development"</span>,</span> </p>
+                        <p className="pb-1">13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-terminal-green">"Game Development"</span></span> </p>
+                        <p className="pb-1">14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&#93;</span> </p>
+                        <p className="pb-1">15&nbsp;&nbsp;&nbsp;&nbsp;<span>&#125;;</span> </p>
                     </div>
 
                     <hr className="m-auto w-11/12 opacity-25"></hr>

@@ -7,7 +7,7 @@ function AboutMe() {
     <>
         <div className="flex">
           <div className="p-25 pl-30 pr-30">
-            <p>~/nikos-world<a className="text-terminal-blue">/about_me</a></p>
+            <p>~/nikos-world<span className="text-terminal-blue">/about_me</span></p>
 
             <div className="mt-5">
               <h1 className="text-4xl bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">About Me</h1>

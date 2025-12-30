@@ -1,7 +1,7 @@
 import TopNavBar from './components/ui/top-navbar'
 import AboutMe from './pages/about-me/about-me'
 import Projects from './pages/projects/projects'
-import Terminal from './components/ui/terminal/terminal'
+import Home from './pages/home/home'
   
 function App() {
   return (
@@ -10,11 +10,9 @@ function App() {
         <TopNavBar />
       </div>
 
-        <div className="flex-col max-w-250 mt-10 mb-20 m-auto">
-          <Terminal></Terminal>
-        </div>
-
-        <hr className="m-auto w-full opacity-25"></hr>
+      <div id="#" className="scroll-smooth">
+        <Home></Home>
+      </div>
 
       <div id="about-me" className="scroll-smooth">
         <AboutMe></AboutMe>

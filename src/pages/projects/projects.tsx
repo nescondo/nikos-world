@@ -12,7 +12,7 @@ function Projects() {
     <>
       <div className="flex">
         <div className="p-25 pl-30 pr-30">
-          <p>~/nikos-world<a className="text-terminal-blue">/projects</a></p>
+          <p>~/nikos-world<span className="text-terminal-blue">/projects</span></p>
 
           <div className="mt-5">
             <h1 className="text-4xl bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">Projects</h1>
@@ -90,11 +90,11 @@ function Projects() {
                 <h3 className="text-3xl">Platform Tools</h3>
 
                 <Button disabled className="mt-5 hover:bg-[#1f2938] mr-5" variant="outline" size="icon-lg">
-                  <a><CgLogIn color="#00D9FF" /></a>
+                  <span><CgLogIn color="#00D9FF" /></span>
                 </Button>
 
                 <Button disabled className="hover:bg-[#1f2938]" variant="outline" size="icon-lg">
-                  <a><BsGithub color="#00D9FF" /></a>
+                  <span><BsGithub color="#00D9FF" /></span>
                 </Button>
 
                 <div className="w-4/5">
