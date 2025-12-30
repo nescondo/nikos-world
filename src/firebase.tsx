@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore/lite'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCj22Jeba63cE210e1KsvS_cYtLCXO8kxs",
+  apiKey: "...",
   authDomain: "nikos-world.firebaseapp.com",
   projectId: "nikos-world",
   storageBucket: "nikos-world.firebasestorage.app",
