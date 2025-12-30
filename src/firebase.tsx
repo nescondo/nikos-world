@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -16,8 +15,5 @@ const firebaseConfig = {
   measurementId: "G-XSDCMLERKR"
 };
 
-
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 export const db = getFirestore(app);
