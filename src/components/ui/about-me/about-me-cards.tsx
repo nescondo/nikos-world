@@ -5,7 +5,7 @@ import { ImConfused2 } from "react-icons/im"
 function AboutMeCards() {
     return (
         <>
-            <div className="flex flex-wrap gap-5">
+            <div className="flex flex-wrap justify-center gap-5">
 
                 <div className="flex-col w-100 h-60 place-items-center p-15 pl-30 pr-30 rounded-lg bg-[#1f2938] border-1 border-terminal-blue/10 transition-all duration-300 ease-in-out hover:scale-101 hover:ring hover:ring-terminal-blue">
                     <FaLaptopCode className="text-terminal-blue text-3xl"/>

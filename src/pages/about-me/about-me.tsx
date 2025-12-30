@@ -17,7 +17,7 @@ function AboutMe() {
               <p className="text-lg text-current/50">// Developer, student, veteran</p>
             </div>
 
-            <div className="flex justify-start mt-10">
+            <div className="flex mt-10">
               <AboutMeCards></AboutMeCards>
             </div>
 
