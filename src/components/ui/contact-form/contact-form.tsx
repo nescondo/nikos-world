@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -6,28 +6,29 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
 import {
   Field,
   FieldError,
   FieldGroup,
   FieldLabel,
-} from "@/components/ui/field"
+} from "@/components/ui/field";
 
-import { Input } from "@/components/ui/input"
+import { Input } from "@/components/ui/input";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupText,
   InputGroupTextarea,
-} from "@/components/ui/input-group"
+} from "@/components/ui/input-group";
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { Controller, useForm } from "react-hook-form"
-import * as z from "zod"
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Controller, useForm } from "react-hook-form";
+import * as z from "zod";
 import { collection, addDoc } from "firebase/firestore"; 
-import { db } from "../../../firebase"
+import { db } from "../../../firebase";
+import { toast } from "sonner";
 
 const ContactFormSchema = z.object({
     name: z
@@ -58,9 +59,13 @@ function ContactForm() {
                 email: data.email,
                 message: data.message
             });
-            console.log("Document written with ID: ", docRef.id);
+            console.log("Success - document written with ID: ", docRef.id);
+            form.reset();
+            toast.success("Message has been sent!");
+
         } catch (e) {
             console.error("Error adding document: ", e);
+            toast.error("Failed to send message.");
         }
     }
 

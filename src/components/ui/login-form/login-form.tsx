@@ -3,17 +3,18 @@ import {
   FieldError,
   FieldGroup,
   FieldLabel,
-} from "@/components/ui/field"
+} from "@/components/ui/field";
 
-import { Input } from "@/components/ui/input"
+import { Input } from "@/components/ui/input";
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../card"
-import { Button } from "../button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../card";
+import { Button } from "../button";
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { Controller, useForm } from "react-hook-form"
-import * as z from "zod"
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Controller, useForm } from "react-hook-form";
+import * as z from "zod";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { toast } from "sonner";
 
 const LoginFormSchema = z.object({
     email: z
@@ -36,12 +37,14 @@ function LoginForm() {
         signInWithEmailAndPassword(auth, data.email, data.password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                console.log("User successfully signed in!!!!", user);
+                console.log("User successfully signed in: ", user);
+                toast.success("Admin successfully signed in!")
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                console.log("Error!!!", errorCode, errorMessage);
+                console.log("Error on sign in: ", errorCode, errorMessage);
+                toast.error("Failed to sign in.")
             });
     }
 

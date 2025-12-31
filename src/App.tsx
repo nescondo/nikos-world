@@ -2,6 +2,7 @@ import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react'
 import AppDefault from './pages/app-default/app-default';
 import AppAdmin from "./pages/app-admin/app-admin";
+import { Toaster } from "@/components/ui/sonner";
   
 function App() {
   const [admin, setAdmin] = useState(false);
@@ -18,7 +19,7 @@ function App() {
     });
   }, []);
 
-  function onSubmit() {
+  function onSignOut() {
     signOut(auth).then(() => {
       setAdmin(false);
       console.log("sign out successful");
@@ -30,9 +31,10 @@ function App() {
   return (
     <>
       <div>
+        <Toaster position="top-center"/>
         {admin ? (
           <div>
-            <AppAdmin onSubmit={onSubmit}></AppAdmin>
+            <AppAdmin onSignOut={onSignOut} adminState={admin}></AppAdmin>
           </div>
         ) : (
           <div>

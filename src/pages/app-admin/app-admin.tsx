@@ -5,7 +5,7 @@ import Projects from "../projects/projects"
 import Contact from "../contact/contact"
 import AdminLogged from "../admin/admin-logged"
 
-function AppAdmin( {onSubmit }: any) {
+function AppAdmin( {onSignOut, admin}: any) {
     return (
         <>
             <div>
@@ -30,7 +30,7 @@ function AppAdmin( {onSubmit }: any) {
                 </div>
 
                 <div id="admin" className="scroll-smooth">
-                    <AdminLogged onSubmit={onSubmit}></AdminLogged>
+                    <AdminLogged onSignOut={onSignOut} adminState={admin}></AdminLogged>
                 </div>
           </div>
         </>

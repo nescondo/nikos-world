@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button"
 import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription, EmptyContent } from "@/components/ui/empty"
 import { PiSmileyFill } from "react-icons/pi"
 import AdminMessages from "./admin-messages"
+import { toast } from "sonner"
 
-function AdminLogged({ onSubmit }: any) {
+function AdminLogged({ onSignOut, adminState }: any) {
     return (
         <>
             <div className="flex">
@@ -41,7 +42,17 @@ function AdminLogged({ onSubmit }: any) {
                                     </EmptyDescription>
                                 </EmptyHeader>
                                 <EmptyContent>
-                                    <Button className="bg-transparent border-[#dadadab0]/50 hover:bg-white/80 text-terminal-blue" type="button" variant="outline" onClick={() => onSubmit()}>
+                                    <Button className="bg-transparent border-[#dadadab0]/50 hover:bg-white/80 text-terminal-blue" type="button" variant="outline" 
+                                        onClick={() => {
+                                            onSignOut()
+                                            if (!adminState) {
+                                                toast.success("Signed out successful!")
+                                            }
+                                            else {
+                                                toast.error("Error signing out.")
+                                            }
+                                        }}
+                                    >
                                         Log out  
                                     </Button>
                                 </EmptyContent>
