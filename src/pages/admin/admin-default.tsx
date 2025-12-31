@@ -31,7 +31,7 @@ function AdminDefault() {
                         </div>
                     </div>
 
-                    <div className="flex gap-40 mt-10 w-full justify-self-start">
+                    <div className="flex gap-40 mt-20 w-full justify-self-start">
                         <div className="w-1/2">
                             <LoginForm></LoginForm>
                         </div>

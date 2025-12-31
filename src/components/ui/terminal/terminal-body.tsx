@@ -34,12 +34,16 @@ function TerminalBody() {
                     </div>
 
                     <div className="flex mt-10 gap-5">
-                        <Button asChild variant="secondary" className="bg-terminal-green hover:bg-terminal-green/70">
+                        <Button asChild variant="secondary" className="bg-terminal-green/80 hover:bg-terminal-green/40">
                             <a href="#projects">View My Work</a>
                         </Button>
                         <Button asChild variant="outline" className="text-terminal-blue border-terminal-blue bg-[#161d28] hover:bg-terminal-blue/70">
                             <a href="#contact">Contact Me</a>
                         </Button>
+                        <Button asChild className="bg-[#dadadab0]/10 text-terminal-green/90">
+                            <a href="#admin">Admin Login</a>
+                        </Button>
+                        
                     </div>
 
                     <div className="flex mt-10 mb-5">

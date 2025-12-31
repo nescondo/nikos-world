@@ -24,12 +24,22 @@ function TopNavBar() {
                             </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <NavigationMenuLink href="#about-me" className="hover:bg-[#1f2938] hover:text-foreground text-lg">
-                                    <span>&lt;<span className="text-terminal-green">About Me</span>/&gt;</span>
+                                    <span>&lt;<span className="text-terminal-green">About</span>/&gt;</span>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <NavigationMenuLink href="#projects" className="hover:bg-[#1f2938] hover:text-foreground text-lg">
                                     <span>&lt;<span className="text-terminal-green">Projects</span>/&gt;</span>
+                                </NavigationMenuLink>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <NavigationMenuLink href="#contact" className="hover:bg-[#1f2938] hover:text-foreground text-lg">
+                                    <span>&lt;<span className="text-terminal-green">Contact</span>/&gt;</span>
+                                </NavigationMenuLink>
+                            </NavigationMenuItem>
+                            <NavigationMenuItem>
+                                <NavigationMenuLink href="#admin" className="hover:bg-[#1f2938] hover:text-foreground text-lg">
+                                    <span>&lt;<span className="text-terminal-green">Admin</span>/&gt;</span>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                         </NavigationMenuList>

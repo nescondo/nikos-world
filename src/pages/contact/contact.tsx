@@ -4,7 +4,7 @@ function Contact() {
     return (
         <>
             <div className="flex">
-                <div className="p-25 pr-30 pl-30">
+                <div className="p-25 pr-30 pl-30 w-full">
                     <p>~/nikos-world<span className="text-terminal-blue">/contact</span></p>
 
                     <div className="mt-5">
@@ -15,9 +15,12 @@ function Contact() {
                         <p className="text-lg text-current/50">// Wanna chat? Send me a message!</p>
                     </div>
 
-                    <div className="flex mt-10">
-                        <ContactForm></ContactForm>
+                    <div className="flex justify-center mt-20">
+                        <div className="w-1/2">
+                            <ContactForm></ContactForm>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <hr className="flex w-full opacity-25"></hr>
