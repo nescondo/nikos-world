@@ -1,18 +1,11 @@
 import {
   Field,
-  FieldDescription,
   FieldError,
   FieldGroup,
   FieldLabel,
 } from "@/components/ui/field"
 
 import { Input } from "@/components/ui/input"
-import {
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroupTextarea,
-} from "@/components/ui/input-group"
 
 import { Card, CardContent, CardFooter, CardHeader } from "../card"
 import { Button } from "../button"
@@ -20,13 +13,11 @@ import { Button } from "../button"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Controller, useForm } from "react-hook-form"
 import * as z from "zod"
-import { collection, addDoc } from "firebase/firestore"; 
-import { db } from "../../../firebase"
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 const LoginFormSchema = z.object({
-    username: z
-        .string()
-        .min(1, "Must enter username."),
+    email: z
+        .email(),
     password: z
         .string()
 })
@@ -35,13 +26,25 @@ function LoginForm() {
     const form = useForm<z.infer<typeof LoginFormSchema>>({
         resolver: zodResolver(LoginFormSchema),
         defaultValues: {
-            username: "",
+            email: "",
             password: "",
         },
     })
 
     async function onSubmit(data: z.infer<typeof LoginFormSchema>) {
-        console.log(data)
+        console.log(data);
+
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, data.email, data.password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                console.log("User successfully signed in!!!!", user);
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log("Error!!!", errorCode, errorMessage);
+            });
     }
 
     return (
@@ -52,18 +55,18 @@ function LoginForm() {
                     <form id="login-form" onSubmit={form.handleSubmit(onSubmit)}>
                         <FieldGroup>
                             <Controller 
-                                name="username"
+                                name="email"
                                 control={form.control}
                                 render={({ field, fieldState }) => (
                                     <Field data-invalid={fieldState.invalid}>
-                                        <FieldLabel htmlFor="login-form-username">
+                                        <FieldLabel htmlFor="login-form-email">
                                             Username
                                         </FieldLabel>
                                         <Input
                                             {...field}
-                                            id="login-form-username"
+                                            id="login-form-email"
                                             aria-invalid={fieldState.invalid}
-                                            placeholder="Enter your username here..."
+                                            placeholder="Enter your email here..."
                                             autoComplete="off"
                                         />
                                         {fieldState.invalid && (
