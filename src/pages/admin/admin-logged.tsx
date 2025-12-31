@@ -26,7 +26,7 @@ function AdminLogged({ onSignOut, adminState }: any) {
                     </div>
 
                     <div className="flex gap-40 mt-20 w-full justify-self-start">
-                        <div className="w-1/2">
+                        <div className="w-2/3 h-100 overflow-auto">
                             <AdminMessages></AdminMessages>
                         </div>
 
@@ -46,7 +46,7 @@ function AdminLogged({ onSignOut, adminState }: any) {
                                         onClick={() => {
                                             onSignOut()
                                             if (!adminState) {
-                                                toast.success("Signed out successful!")
+                                                toast.success("Sign out successful!")
                                             }
                                             else {
                                                 toast.error("Error signing out.")

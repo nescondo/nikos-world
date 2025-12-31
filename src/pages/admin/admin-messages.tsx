@@ -37,7 +37,7 @@ function AdminMessages() {
                         <TableHead>Message</TableHead>
                     </TableRow>
                 </TableHeader>
-                <TableBody className="text-wrap">
+                <TableBody>
                     {messagesArray.map((message) => (
                         <TableRow key={message.id}>
                             <TableCell>{message.name}</TableCell>
