@@ -114,6 +114,7 @@ function Projects() {
           </div>
         </div>
       </div>
+      <hr className="flex w-full opacity-25"></hr>
     </>
   )
 }

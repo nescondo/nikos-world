@@ -11,7 +11,7 @@ function TopNavBar() {
         <>
             <div className="flex p-8 bg-[#0d1117]/90 items-center">
                 <div className="text-2xl flex flex-1 justify-center">
-                    <h2>&lt;<span className="text-terminal-blue">Nikolai Escondo</span>/&gt;<span className="animate-cursor text-terminal-blue">|</span></h2>
+                    <h2>&lt;<span className="text-terminal-blue">niko's world</span>/&gt;<span className="animate-cursor text-terminal-blue">|</span></h2>
                 </div>
 
                 <div className="flex flex-1 justify-center">

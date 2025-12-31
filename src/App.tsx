@@ -2,12 +2,12 @@ import TopNavBar from './components/ui/top-navbar/top-navbar'
 import AboutMe from './pages/about-me/about-me'
 import Projects from './pages/projects/projects'
 import Home from './pages/home/home'
-import ContactForm from './components/ui/contact-form/contact-form'
-import Login from './components/ui/login-form/login-form'
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react'
 import { Button } from './components/ui/button'
 import Admin from './pages/admin/admin'
+import AdminLogin from './pages/admin-login/admin-login'
+import Contact from './pages/contact/contact';
   
 function App() {
   const [admin, setAdmin] = useState(false);
@@ -63,11 +63,11 @@ function App() {
             </div>
 
             <div id="contact" className="scroll-smooth">
-              <ContactForm></ContactForm>
+              <Contact></Contact>
             </div>
 
-            <div>
-              <Login></Login>
+            <div id="admin" className="scroll-smooth">
+              <AdminLogin></AdminLogin>
             </div>
           </div>
         )}

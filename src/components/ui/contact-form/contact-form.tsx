@@ -52,11 +52,6 @@ function ContactForm() {
     })
 
     async function onSubmit(data: z.infer<typeof ContactFormSchema>) {
-        console.log(db);
-        console.log(data.name);
-        console.log(data.email);
-        console.log(data.message);
-
         try {
             const docRef = await addDoc(collection(db, "messages"), {
                 name: data.name,
