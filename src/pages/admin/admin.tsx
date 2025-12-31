@@ -62,7 +62,7 @@ function Admin() {
             setMessagesArray(allMessages);
         });
 
-        unsubscribe();
+        return () => unsubscribe();
     }, []);
 
 
