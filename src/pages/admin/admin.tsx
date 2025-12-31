@@ -14,43 +14,6 @@ import { db } from "../../firebase";
 function Admin() {
     const [messagesArray, setMessagesArray] = useState<any[]>([]);
 
-    // function handleAddMesage(message: any) {
-    //     setMessagesArray([
-    //         ...messagesArray,
-    //         {
-    //             id: message.id,
-    //             name: message.name,
-    //             email: message.email,
-    //             message: message.message
-    //         }
-    //     ]);
-    // }
-
-    // const fetchAllMessages = async () => {
-    //     const query = await getDocs(collection(db, "messages"));
-    //     const allMessages = query.docs.map(message => ({
-    //         id: message.id,
-    //         name: message.data().name,
-    //         email: message.data().email,
-    //         message: message.data().message,
-    //     }));
-
-    //     return allMessages;
-    // }
-
-    // useEffect(() => {
-    //     const loadMessages = async () => {
-    //         const messages = await fetchAllMessages();
-    //         setMessagesArray(messages);
-    //     };
-
-    //     loadMessages();
-    // }, []);
-
-    // const unsub = onSnapshot(doc(db, "messages"), (doc) => {
-    //     console.log("Current messages: ", doc.data());
-    // });
-
     useEffect(() => {
         const unsubscribe = onSnapshot(collection(db, "messages"), (snapshot) => {
             const allMessages = snapshot.docs.map(message => ({
@@ -64,7 +27,6 @@ function Admin() {
 
         return () => unsubscribe();
     }, []);
-
 
     return (
         <>

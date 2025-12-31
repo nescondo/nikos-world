@@ -17,11 +17,9 @@ function App() {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setAdmin(true);
-        console.log(auth);
       }
       else {
         setAdmin(false);
-        console.log(user);
       }
     });
   }, []);
