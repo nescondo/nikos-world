@@ -45,14 +45,14 @@ function AboutMeConfig({ onTabClick }: any) {
                         <p className="pb-1">15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"role"</span>: <span className="text-terminal-green">"Full-time Medical Laboratory Technician/Army 68k"
                             </span></span> </p>
                         <p className="pb-1">16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"fun-facts"</span>: &#91;<span className="text-terminal-green">
-                            "Lived in Fairbanks, Alaska"</span>,<span className="text-terminal-green"> started coding in 2022 w/ Python"</span>&#93;</span> </p>
+                            "Lived in Fairbanks, Alaska"</span>,<span className="text-terminal-green"> "started coding in 2022 w/ Python"</span>&#93;</span> </p>
                         <p className="pb-1">17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;,</p>
                         <p className="pb-1">18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#123; </p>
                         <p className="pb-1">19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"period"</span>: <span className="text-terminal-green">"2018-2020"</span></span> </p>
                         <p className="pb-1">20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"role"</span>: <span className="text-terminal-green">"Army Soldier/MLT in training"
                             </span></span> </p>
                         <p className="pb-1">21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"fun-facts"</span>: &#91;<span className="text-terminal-green">
-                            "Lived in Missouri, Texas, and Hawaii"</span>,<span className="text-terminal-green"> graduated HS in 2018"</span>&#93;</span> </p>
+                            "Lived in Missouri, Texas, and Hawaii"</span>,<span className="text-terminal-green"> "graduated HS in 2018"</span>&#93;</span> </p>
                         <p className="pb-1">22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</p>
                         <p className="pb-1">23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#93;</p>
                         <p className="pb-1">24&nbsp;&nbsp;&nbsp;&nbsp;&#125;</p>
