@@ -11,7 +11,7 @@ function AdminLogged({ onSignOut, adminState }: any) {
             <div className="flex">
                 <div className="p-25 pr-30 pl-30 w-full">
                     <div className="justify-items-start">
-                        <p>~/nikos-world<span className="text-terminal-blue">/admin_logged_in</span></p>
+                        <p>~/nikos-world<span className="text-terminal-blue">/admin</span></p>
 
                         <div className="mt-5">
                             <h1 className="text-4xl bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">Admin Fun</h1>
