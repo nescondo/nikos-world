@@ -1,7 +1,6 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -11,7 +10,7 @@ import { collection, onSnapshot } from "firebase/firestore";
 import { useState, useEffect } from 'react';
 import { db } from "../../firebase";
 
-function Admin() {
+function AdminMessages() {
     const [messagesArray, setMessagesArray] = useState<any[]>([]);
 
     useEffect(() => {
@@ -31,7 +30,6 @@ function Admin() {
     return (
         <>
             <Table>
-                <TableCaption>Your messages</TableCaption>
                 <TableHeader>
                     <TableRow>
                         <TableHead className="w-[100px]">Name</TableHead>
@@ -39,7 +37,7 @@ function Admin() {
                         <TableHead>Message</TableHead>
                     </TableRow>
                 </TableHeader>
-                <TableBody>
+                <TableBody className="text-wrap">
                     {messagesArray.map((message) => (
                         <TableRow key={message.id}>
                             <TableCell>{message.name}</TableCell>
@@ -53,4 +51,4 @@ function Admin() {
     )
 }
 
-export default Admin
+export default AdminMessages

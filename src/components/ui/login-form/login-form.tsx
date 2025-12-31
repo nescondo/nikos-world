@@ -50,7 +50,7 @@ function LoginForm() {
             <Card className="w-full border-white/20">
                 <CardHeader>
                     <CardTitle className="bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">Admin Login</CardTitle>
-                    <CardDescription className="text-[#dadadab0]">A simple implementation of Firebase!</CardDescription>
+                    <CardDescription className="text-[#dadadab0]">Log in to view your messages!</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <form id="login-form" onSubmit={form.handleSubmit(onSubmit)}>
