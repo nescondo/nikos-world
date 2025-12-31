@@ -1,5 +1,5 @@
-import AboutMeBio from "@/components/ui/about-me/about-me-bio"
 import AboutMeCards from "@/components/ui/about-me/about-me-cards"
+import AboutMeWindow from "@/components/ui/about-me/about-me-window"
 
 function AboutMe() {
 
@@ -22,7 +22,7 @@ function AboutMe() {
             </div>
 
             <div className="flex justify-center mt-20">
-              <AboutMeBio></AboutMeBio>
+              <AboutMeWindow></AboutMeWindow>
             </div>
 
           </div>
