@@ -7,6 +7,7 @@ import Login from './components/ui/login-form/login-form'
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useEffect, useState } from 'react'
 import { Button } from './components/ui/button'
+import Admin from './pages/admin/admin'
   
 function App() {
   const [admin, setAdmin] = useState(false);
@@ -43,6 +44,7 @@ function App() {
             <Button type="submit" onClick={() => onSubmit()}>
               Sign out  
             </Button>
+            <Admin></Admin>
           </div>
         ) : (
           <div>
