@@ -47,7 +47,7 @@ function LoginForm() {
 
     return (
         <>
-            <Card className="w-full border-terminal-blue/10">
+            <Card className="w-full border-white/20">
                 <CardHeader>
                     <CardTitle className="bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">Admin Login</CardTitle>
                     <CardDescription className="text-[#dadadab0]">A simple implementation of Firebase!</CardDescription>

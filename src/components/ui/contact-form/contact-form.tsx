@@ -66,7 +66,7 @@ function ContactForm() {
 
     return (
         <>
-            <Card className="w-full border-terminal-blue/10">
+            <Card className="w-full border-white/20">
                 <CardHeader>
                     <CardTitle className="bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">Contact me</CardTitle>
                     <CardDescription className="text-[#dadadab0]">Feel free to get in touch!</CardDescription>
