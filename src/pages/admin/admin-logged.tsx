@@ -29,7 +29,7 @@ function AdminLogged({ onSignOut, adminState }: any) {
                     <div className="flex mt-20 w-full justify-self-center">
                             <Empty>
                                 <EmptyHeader>
-                                    <EmptyMedia className="bg-transparent" variant="icon">
+                                    <EmptyMedia className="bg-transparent scale-200" variant="icon">
                                         <PiSmileyFill className="text-terminal-blue" />
                                     </EmptyMedia>
                                     <EmptyTitle>You're an admin!</EmptyTitle>

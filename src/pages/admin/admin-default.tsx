@@ -39,7 +39,7 @@ function AdminDefault() {
                         <div className="w-full">
                             <Empty>
                                 <EmptyHeader>
-                                    <EmptyMedia className="bg-transparent" variant="icon">
+                                    <EmptyMedia className="bg-transparent scale-200" variant="icon">
                                         <PiSmileySadFill className="text-terminal-blue" />
                                     </EmptyMedia>
                                     <EmptyTitle>You're not an admin.</EmptyTitle>
