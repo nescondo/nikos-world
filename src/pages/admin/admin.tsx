@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { collection, getDocs, doc, onSnapshot, query } from "firebase/firestore";
+import { collection, onSnapshot } from "firebase/firestore";
 import { useState, useEffect } from 'react';
 import { db } from "../../firebase";
 
@@ -26,17 +26,17 @@ function Admin() {
     //     ]);
     // }
 
-    const fetchAllMessages = async () => {
-        const query = await getDocs(collection(db, "messages"));
-        const allMessages = query.docs.map(message => ({
-            id: message.id,
-            name: message.data().name,
-            email: message.data().email,
-            message: message.data().message,
-        }));
+    // const fetchAllMessages = async () => {
+    //     const query = await getDocs(collection(db, "messages"));
+    //     const allMessages = query.docs.map(message => ({
+    //         id: message.id,
+    //         name: message.data().name,
+    //         email: message.data().email,
+    //         message: message.data().message,
+    //     }));
 
-        return allMessages;
-    }
+    //     return allMessages;
+    // }
 
     // useEffect(() => {
     //     const loadMessages = async () => {
