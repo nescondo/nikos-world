@@ -7,7 +7,7 @@ import {
 
 import { Input } from "@/components/ui/input"
 
-import { Card, CardContent, CardFooter, CardHeader } from "../card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../card"
 import { Button } from "../button"
 
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -32,8 +32,6 @@ function LoginForm() {
     })
 
     async function onSubmit(data: z.infer<typeof LoginFormSchema>) {
-        console.log(data);
-
         const auth = getAuth();
         signInWithEmailAndPassword(auth, data.email, data.password)
             .then((userCredential) => {
@@ -49,8 +47,11 @@ function LoginForm() {
 
     return (
         <>
-            <Card className="w-full">
-                <CardHeader>Admin Login</CardHeader>
+            <Card className="w-full border-terminal-blue/10">
+                <CardHeader>
+                    <CardTitle className="bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">Admin Login</CardTitle>
+                    <CardDescription className="text-[#dadadab0]">A simple implementation of Firebase!</CardDescription>
+                </CardHeader>
                 <CardContent>
                     <form id="login-form" onSubmit={form.handleSubmit(onSubmit)}>
                         <FieldGroup>
@@ -60,7 +61,7 @@ function LoginForm() {
                                 render={({ field, fieldState }) => (
                                     <Field data-invalid={fieldState.invalid}>
                                         <FieldLabel htmlFor="login-form-email">
-                                            Username
+                                            Email
                                         </FieldLabel>
                                         <Input
                                             {...field}
@@ -68,6 +69,7 @@ function LoginForm() {
                                             aria-invalid={fieldState.invalid}
                                             placeholder="Enter your email here..."
                                             autoComplete="off"
+                                            className="border-[#dadadab0]/50"
                                         />
                                         {fieldState.invalid && (
                                             <FieldError errors={[fieldState.error]} />
@@ -90,6 +92,7 @@ function LoginForm() {
                                             aria-invalid={fieldState.invalid}
                                             placeholder="Enter your password here..."
                                             autoComplete="Off"
+                                            className="border-[#dadadab0]/50"
                                         />
                                         {fieldState.invalid && (
                                             <FieldError errors={[fieldState.error]} />
@@ -102,7 +105,7 @@ function LoginForm() {
                 </CardContent>
                 <CardFooter>
                     <Field orientation="horizontal">
-                        <Button type="submit" form="login-form">
+                        <Button className="bg-[#dadadab0]/10 text-terminal-green/90" type="submit" form="login-form">
                             Submit
                         </Button>
                     </Field>

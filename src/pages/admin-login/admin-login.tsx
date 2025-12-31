@@ -12,7 +12,7 @@ function AdminLogin() {
                     </div>
 
                     <div className="mt-2">
-                        <p className="text-lg text-current/50">// A little place to see more of the backend!</p>
+                        <p className="text-lg text-current/50">// A little place to see more of the backend</p>
                     </div>
 
                     <div className="flex mt-10">

@@ -38,7 +38,8 @@ const ContactFormSchema = z.object({
         .email(),
     message: z
         .string()
-        .min(5, "Message must be at least 5 characters."),
+        .min(5, "Message must be at least 5 characters.")
+        .max(250, "Message must be less than 250 characters."),
 })
 
 function ContactForm() {
@@ -66,10 +67,10 @@ function ContactForm() {
 
     return (
         <>
-            <Card className="w-full">
+            <Card className="w-full border-terminal-blue/10">
                 <CardHeader>
-                    <CardTitle>Contact me!</CardTitle>
-                    <CardDescription>Send me a message! I would love to chat.</CardDescription>
+                    <CardTitle className="bg-gradient-to-r text-transparent bg-clip-text from-terminal-green to-emerald-400">Contact me</CardTitle>
+                    <CardDescription className="text-[#dadadab0]">Feel free to get in touch!</CardDescription>
                 </CardHeader>
                 <CardContent>
 
@@ -89,6 +90,7 @@ function ContactForm() {
                                             aria-invalid={fieldState.invalid}
                                             placeholder="Enter your name here..."
                                             autoComplete="off"
+                                            className="border-[#dadadab0]/50"
                                         />
                                         {fieldState.invalid && (
                                             <FieldError errors={[fieldState.error]} />
@@ -110,6 +112,7 @@ function ContactForm() {
                                             aria-invalid={fieldState.invalid}
                                             placeholder="Enter your email here..."
                                             autoComplete="Off"
+                                            className="border-[#dadadab0]/50"
                                         />
                                         {fieldState.invalid && (
                                             <FieldError errors={[fieldState.error]} />
@@ -126,7 +129,7 @@ function ContactForm() {
                                         <FieldLabel htmlFor="contact-form-message">
                                             Message
                                         </FieldLabel>
-                                        <InputGroup>
+                                        <InputGroup className="border-[#dadadab0]/50">
                                             <InputGroupTextarea
                                                 {...field}
                                                 id="contact-form-message"
@@ -137,13 +140,10 @@ function ContactForm() {
                                             />
                                             <InputGroupAddon align="block-end">
                                                 <InputGroupText className="tabular-nums">
-                                                    {field.value.length}/100 characters
+                                                    {field.value.length}/250 characters
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                         </InputGroup>
-                                        <FieldDescription>
-                                            Feel free to get in touch!
-                                        </FieldDescription>
                                         {fieldState.invalid && (
                                             <FieldError errors={[fieldState.error]} />
                                         )}
@@ -155,10 +155,10 @@ function ContactForm() {
                 </CardContent>
                 <CardFooter>
                     <Field orientation="horizontal">
-                        <Button type="button" variant="outline" onClick={() => form.reset()}>
+                        <Button className="bg-transparent border-[#dadadab0]/50 hover:bg-white/80" type="button" variant="outline" onClick={() => form.reset()}>
                             Reset
                         </Button>
-                        <Button type="submit" form="contact-form">
+                        <Button className="bg-[#dadadab0]/10 text-terminal-green/90" type="submit" form="contact-form">
                             Submit
                         </Button>
                     </Field>
