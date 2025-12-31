@@ -3,6 +3,7 @@ import { Empty, EmptyHeader, EmptyMedia, EmptyTitle, EmptyDescription, EmptyCont
 import { PiSmileyFill } from "react-icons/pi"
 import AdminMessages from "./admin-messages"
 import { toast } from "sonner"
+import AdminTerminalHeader from "@/components/ui/admin/admin-terminal-header"
 
 function AdminLogged({ onSignOut, adminState }: any) {
     return (
@@ -25,12 +26,7 @@ function AdminLogged({ onSignOut, adminState }: any) {
                         </div>
                     </div>
 
-                    <div className="flex gap-40 mt-20 w-full justify-self-start">
-                        <div className="w-2/3 h-100 overflow-auto">
-                            <AdminMessages></AdminMessages>
-                        </div>
-
-                        <div className="w-full">
+                    <div className="flex mt-20 w-full justify-self-center">
                             <Empty>
                                 <EmptyHeader>
                                     <EmptyMedia className="bg-transparent" variant="icon">
@@ -38,7 +34,7 @@ function AdminLogged({ onSignOut, adminState }: any) {
                                     </EmptyMedia>
                                     <EmptyTitle>You're an admin!</EmptyTitle>
                                     <EmptyDescription>
-                                        See all your messages here. Log out when you're done!
+                                        See all of your messages below. Log out when you're done!
                                     </EmptyDescription>
                                 </EmptyHeader>
                                 <EmptyContent>
@@ -57,6 +53,14 @@ function AdminLogged({ onSignOut, adminState }: any) {
                                     </Button>
                                 </EmptyContent>
                             </Empty>
+                        </div>
+                    
+                    <div className="border-t-1 border-r-1 border-l-1 rounded-t-lg border-white/20 ">
+                        <AdminTerminalHeader></AdminTerminalHeader>
+                    </div>
+                    <div className="flex w-full justify-self-center border-1 border-white/20 rounded-b-lg bg-[#161d28]">
+                        <div>
+                            <AdminMessages></AdminMessages>
                         </div>
                     </div>
 

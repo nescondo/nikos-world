@@ -29,24 +29,26 @@ function AdminMessages() {
 
     return (
         <>
-            <Table>
-                <TableHeader>
-                    <TableRow>
-                        <TableHead className="w-[100px]">Name</TableHead>
-                        <TableHead>Email</TableHead>
-                        <TableHead>Message</TableHead>
-                    </TableRow>
-                </TableHeader>
-                <TableBody>
-                    {messagesArray.map((message) => (
-                        <TableRow key={message.id}>
-                            <TableCell>{message.name}</TableCell>
-                            <TableCell>{message.email}</TableCell>
-                            <TableCell>{message.message}</TableCell>
+            <div className="p-10">
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead className="w-[100px] text-terminal-green">Name</TableHead>
+                            <TableHead className="text-terminal-blue">Email</TableHead>
+                            <TableHead className="text-purple-500">Message</TableHead>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
+                    </TableHeader>
+                    <TableBody>
+                        {messagesArray.map((message) => (
+                            <TableRow key={message.id}>
+                                <TableCell>{message.name}</TableCell>
+                                <TableCell>{message.email}</TableCell>
+                                <TableCell className="whitespace-normal wrap-break-word max-w-lg">{message.message}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </div>
         </>
     )
 }
