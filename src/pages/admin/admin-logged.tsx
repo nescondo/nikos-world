@@ -41,7 +41,7 @@ function AdminLogged({ onSubmit }: any) {
                                     </EmptyDescription>
                                 </EmptyHeader>
                                 <EmptyContent>
-                                    <Button type="submit" onClick={() => onSubmit()}>
+                                    <Button className="bg-transparent border-[#dadadab0]/50 hover:bg-white/80 text-terminal-blue" type="button" variant="outline" onClick={() => onSubmit()}>
                                         Log out  
                                     </Button>
                                 </EmptyContent>
