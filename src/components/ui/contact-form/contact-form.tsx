@@ -28,7 +28,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { Controller, useForm } from "react-hook-form"
 import * as z from "zod"
 import { collection, addDoc } from "firebase/firestore"; 
-import { db } from "../../firebase"
+import { db } from "../../../firebase"
 
 const ContactFormSchema = z.object({
     name: z
