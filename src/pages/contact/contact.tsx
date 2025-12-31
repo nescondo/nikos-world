@@ -23,7 +23,7 @@ function Contact() {
 
                 </div>
             </div>
-            <hr className="flex w-full opacity-25"></hr>
+            <hr className="flex w-full"></hr>
         </>
     )
 }
