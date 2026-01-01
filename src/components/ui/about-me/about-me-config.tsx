@@ -35,23 +35,23 @@ function AboutMeConfig({ onTabClick }: any) {
                             "Delta Dental SWE intern"</span>, <span className="text-terminal-green">"undergrad. researcher"</span>, <span className="text-terminal-green">"student mentor"</span>&#93;</span> </p>
                         <p className="pb-1">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;,</p>
                         <p className="pb-1">9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#123; </p>
-                        <p className="pb-1">10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"period"</span>: <span className="text-terminal-green">"2023-2025"</span></span> </p>
-                        <p className="pb-1">11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"role"</span>: <span className="text-terminal-green">"Full-time CS student at 
+                        <p className="pb-1">10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"period"</span>: <span className="text-terminal-green">"2023-2025"</span></span> </p>
+                        <p className="pb-1">11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"role"</span>: <span className="text-terminal-green">"Full-time CS student at 
                             </span><span className="text-[#0032A0]"> Grand Valley State University</span><span className="text-terminal-green">"</span></span> </p>
-                        <p className="pb-1">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"fun-facts"</span>: &#91;<span className="text-terminal-green">
+                        <p className="pb-1">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"fun-facts"</span>: &#91;<span className="text-terminal-green">
                             "Officially retired from the Army :D"</span>&#93;</span> </p>
                         <p className="pb-1">13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;, </p>
-                        <p className="pb-1">14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"period"</span>: <span className="text-terminal-green">"2020-2023"</span></span> </p>
-                        <p className="pb-1">15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"role"</span>: <span className="text-terminal-green">"Full-time Medical Laboratory Technician/Army 68k"
+                        <p className="pb-1">14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"period"</span>: <span className="text-terminal-green">"2020-2023"</span></span> </p>
+                        <p className="pb-1">15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"role"</span>: <span className="text-terminal-green">"Full-time Medical Laboratory Technician/Army 68k"
                             </span></span> </p>
-                        <p className="pb-1">16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"fun-facts"</span>: &#91;<span className="text-terminal-green">
+                        <p className="pb-1">16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"fun-facts"</span>: &#91;<span className="text-terminal-green">
                             "Lived in Fairbanks, Alaska"</span>,<span className="text-terminal-green"> "started coding in 2022 w/ Python"</span>&#93;</span> </p>
                         <p className="pb-1">17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;,</p>
                         <p className="pb-1">18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#123; </p>
-                        <p className="pb-1">19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"period"</span>: <span className="text-terminal-green">"2018-2020"</span></span> </p>
-                        <p className="pb-1">20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"role"</span>: <span className="text-terminal-green">"Army Soldier/MLT in training"
+                        <p className="pb-1">19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"period"</span>: <span className="text-terminal-green">"2018-2020"</span></span> </p>
+                        <p className="pb-1">20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"role"</span>: <span className="text-terminal-green">"Army Soldier/MLT in training"
                             </span></span> </p>
-                        <p className="pb-1">21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><span className="text-orange-400">"fun-facts"</span>: &#91;<span className="text-terminal-green">
+                        <p className="pb-1">21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><span className="text-orange-400">"fun-facts"</span>: &#91;<span className="text-terminal-green">
                             "Lived in Missouri, Texas, and Hawaii"</span>,<span className="text-terminal-green"> "graduated HS in 2018"</span>&#93;</span> </p>
                         <p className="pb-1">22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;</p>
                         <p className="pb-1">23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#93;</p>

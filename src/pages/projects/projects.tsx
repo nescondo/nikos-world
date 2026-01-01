@@ -2,7 +2,7 @@ import { CgLogIn } from 'react-icons/cg'
 import { Button } from "@/components/ui/button"
 import { BsGithub } from "react-icons/bs";
 import { FaAngular, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"
-import { RiTailwindCssFill } from "react-icons/ri"
+import { RiTailwindCssFill, RiFirebaseFill } from "react-icons/ri"
 import { TbBrandVite, TbFileTypeSql } from "react-icons/tb"
 import { SiPostman } from "react-icons/si"
 
@@ -77,7 +77,7 @@ function Projects() {
                 <div className="flex mt-5 gap-2">
                   <FaReact className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#00D9FF"/>
                   <RiTailwindCssFill className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#3b82f6"/>
-                  <TbBrandVite className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#bd34fe"/>
+                  <RiFirebaseFill className="text-3xl transition-all duration-300 ease-in-out hover:scale-105" color="#FFA611"/>
                 </div>
               </div>
             </div>
