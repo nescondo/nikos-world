@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { BsGithub } from "react-icons/bs";
 import { FaAngular, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"
 import { RiTailwindCssFill, RiFirebaseFill } from "react-icons/ri"
-import { TbBrandVite, TbFileTypeSql } from "react-icons/tb"
+import { TbFileTypeSql } from "react-icons/tb"
 import { SiPostman } from "react-icons/si"
 
 function Projects() {
