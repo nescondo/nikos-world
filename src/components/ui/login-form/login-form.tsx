@@ -108,7 +108,7 @@ function LoginForm() {
                 </CardContent>
                 <CardFooter>
                     <Field orientation="horizontal">
-                        <Button className="bg-[#dadadab0]/10 text-terminal-green/90" type="submit" form="login-form">
+                        <Button className="bg-[#dadadab0]/10 text-terminal-green/90 cursor-pointer" type="submit" form="login-form">
                             Submit
                         </Button>
                     </Field>

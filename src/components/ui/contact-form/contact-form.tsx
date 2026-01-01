@@ -159,10 +159,10 @@ function ContactForm() {
                 </CardContent>
                 <CardFooter>
                     <Field orientation="horizontal">
-                        <Button className="bg-transparent border-[#dadadab0]/50 hover:bg-white/80 text-terminal-blue" type="button" variant="outline" onClick={() => form.reset()}>
+                        <Button className="text-terminal-blue border-terminal-blue bg-[#161d28] hover:bg-terminal-blue/70 cursor-pointer" type="button" variant="outline" onClick={() => form.reset()}>
                             Reset
                         </Button>
-                        <Button className="bg-[#dadadab0]/10 text-terminal-green/90" type="submit" form="contact-form">
+                        <Button className="bg-[#dadadab0]/10 text-terminal-green/90 cursor-pointer" type="submit" form="contact-form">
                             Submit
                         </Button>
                     </Field>

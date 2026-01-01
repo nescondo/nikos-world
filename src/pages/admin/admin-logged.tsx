@@ -38,7 +38,7 @@ function AdminLogged({ onSignOut, adminState }: any) {
                                     </EmptyDescription>
                                 </EmptyHeader>
                                 <EmptyContent>
-                                    <Button className="bg-transparent border-[#dadadab0]/50 hover:bg-white/80 text-terminal-blue" type="button" variant="outline" 
+                                    <Button className="bg-transparent border-[#dadadab0]/50 hover:bg-white/80 text-terminal-blue cursor-pointer" type="button" variant="outline" 
                                         onClick={() => {
                                             onSignOut()
                                             if (!adminState) {
